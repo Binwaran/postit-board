@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Post-it Relationship Board
 
-## Getting Started
+An interactive relationship board that lets users create and connect virtual Post-it notes in real-time.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🟨 Create draggable Post-it notes on canvas
+- ✏️ Edit note text inline
+- 🔗 Draw and manage connections between notes
+- 🗑 Delete notes (with automatic connection cleanup)
+- 💾 Real-time data sync with [Supabase](https://supabase.io)
+- 📦 Deployed with [Vercel](https://vercel.com)
+
+## ⚙️ Tech Stack
+
+- **Frontend:** [Next.js](https://nextjs.org), [React](https://reactjs.org), [Tailwind CSS](https://tailwindcss.com)
+- **Backend/Storage:** [Supabase](https://supabase.io) (PostgreSQL + Realtime)
+- **Deployment:** [Vercel](https://vercel.com)
+
+## 📂 Project Structure
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+/src
+/components
+\- PostIt.tsx         # Post-it rendering and interaction
+\- Board.tsx          # Main board logic and layout
+/lib
+\- supabase.ts        # Supabase client
+\- noteApi.ts         # CRUD for notes
+\- connectionApi.ts   # CRUD for connections
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+````
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Setup
 
-## Learn More
+1. Clone this repo  
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+````
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Add `.env.local`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=your-project-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+   ```
 
-## Deploy on Vercel
+4. Run locally:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📦 Deployment
+
+* Connect repo to [Vercel](https://vercel.com)
+* Set Environment Variables
+* Auto-deploy from `main` branch
+
+---
+
+## 🎯 Future Enhancements
+
+* 🎨 Color-coded Post-its (in progress)
+* 💾 Export/Import board state as JSON
+* 🧠 AI-assisted grouping of related notes
+
+![image](https://github.com/user-attachments/assets/ff798909-cef1-494a-9b54-f1ba1b9cf9de)
+
+
+Made with ❤️ by [@Binwaran](https://github.com/Binwaran)
