@@ -70,7 +70,8 @@ An interactive relationship board that lets users create and connect virtual Pos
 * 💾 Export/Import board state as JSON
 * 🧠 AI-assisted grouping of related notes
 
-![image](https://github.com/user-attachments/assets/ff798909-cef1-494a-9b54-f1ba1b9cf9de)
+![Screenshot 2025-06-17 133050](https://github.com/user-attachments/assets/7b190987-15e3-4784-a670-51647dc36e8f)
+
 
 
 Made with ❤️ by [@Binwaran](https://github.com/Binwaran)
